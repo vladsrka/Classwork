@@ -9,34 +9,186 @@
 </head>
 
 <body>
-    <h1>
-        Регистрация и покупка
-    </h1>
-    <form action="#">
-        <label>
-            <p>
-                Имя
-            </p>
-            <input name="name" type="text" placeholder="name" required>
-        </label>
-        <label>
-            <p>
-                Телефон
-            </p>
-            <input name="tel" type="tel" placeholder="tel" required>
-        </label>
-        <label>
-            <p>
-                Email
-            </p>
-            <input name="email" type="email" placeholder="email" required>
-        </label>
-        <p>
-            <h>
-                Получатель
-            </h>
-        </p>
-        
+    <form>
+        <div class="header">
+            <h1>
+                Регистрация и покупка
+            </h1>
+            <label>
+                <p>
+                    <b>
+                        Имя
+                    </b>
+                </p>
+                <input name="name" type="text" placeholder="Александр" required>
+            </label>
+            <label>
+                <p>
+                    <b>
+                        Телефон
+                    </b>
+                </p>
+                <input name="tel" type="tel" placeholder="+375 29 123-34-13" required>
+            </label>
+            <label>
+                <p>
+                    <b>
+                        Email
+                    </b>
+                </p>
+                <input name="email" type="email" placeholder="sasha-teaches@gmail.com" required>
+            </label>
+        </div>
+        <div class="main">
+            <div class="recipienr">
+                <h2>
+                    Получатель
+                    <a href="https://www.instagram.com/vladsrka/" target="_blank">
+                        Это я!
+                    </a>
+                </h2>
+                <label>
+                    <p>
+                        Имя
+                    </p>
+                    <input name="name recipienr" type="text" placeholder="Александр" required>
+                </label>
+                <label>
+                    <p>
+                        Фамилия
+                    </p>
+                    <input name="surname recipienr" type="text" placeholder="Клименок" required>
+                </label>
+                <label>
+                    <p>
+                        Телефон
+                    </p>
+                    <input name="tel recipienr" type="tel" placeholder="+375 29 123-34-13" required>
+                </label>
+                <label>
+                    <p>
+                        Email
+                    </p>
+                    <input name="email recipienr" type="email" placeholder="sasha-teaches@gmail.com" required>
+                </label>
+            </div>
+            <div class="delivery address">
+                <h2>
+                    Адрес доставки
+                </h2>
+                <input name="new address" type="text" placeholder="Новый адрес" required>
+                <label>
+                    <p>
+                        Город
+                    </p>
+                    <input name="city" type="text" placeholder="Гомель" required>
+                </label>
+                <label>
+                    <p>
+                        Индекс
+                    </p>
+                    <input name="postcode" type="text" placeholder="145120" required>
+                </label>
+                <label>
+                    <p>
+                        Адрес
+                    </p>
+                    <textarea name="address" placeholder="пр. Мира, 26, корпус1, квартира27"></textarea>
+                </label>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="payment method">
+                <h2>
+                    Способ оплаты
+                </h2>
+                <p>
+                    <label>
+                        <input name="payment method" type="radio" checked value="1" required>
+                        Наличными курьеру
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input name="payment method" type="radio" value="2" required>
+                        В кредит Альфа-Банк
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input name="payment method" type="radio" value="3" required>
+                        Картой VISA или MasterCart
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input name="payment method" type="radio" value="4" required>
+                        Через терминал Qiwi
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input name="payment method" type="radio" value="5" required>
+                        Webmohey
+                    </label>
+                </p>
+            </div>
+            <div class="delivery method">
+                <h2>
+                    Способ доставки*
+                </h2>
+                <p>
+                    <label>
+                        <input name="delivery method" type="radio" checked value="1" required>
+                        Курьер
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input name="delivery method" type="radio" value="2" required>
+                        Почта России
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input name="delivery method" type="radio" value="3" required>
+                        DNL
+                    </label>
+                </p>
+                <p>
+                    *Точную стоимость доставки <br> уточняйте у менеджера
+                </p>
+            </div>
+            <div class="additionally">
+                <h2>
+                    Дополнительно
+                </h2>
+                <p>
+                    <label>
+                        <input name="additionally" type="checkbox" checked>
+                        Быстрая доставка (24ч) <b>+500</b>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input name="additionally" type="checkbox">
+                        Подъем на этаж <b>+200</b>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input name="additionally" type="checkbox">
+                        Сборка <b>+100</b>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input name="additionally" type="checkbox">
+                        Вынос старой мебели <b>+200</b>
+                    </label>
+                </p>
+            </div>
+        </div>
     </form>
 </body>
 
