@@ -3,6 +3,10 @@
 }
 #qw{
     color: blue;
+    font-size: 18px;
+}
+#p1{
+    font-size: 2em;
 }
 #qa{
     color:red;
