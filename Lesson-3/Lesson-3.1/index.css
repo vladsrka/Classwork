@@ -1,9 +1,21 @@
 #we{
     text-decoration: underline;
 }
+h1{
+    border:dashed red;
+}
 #qw{
     font-style: italic;
+    border: 1px solid green;
+    width: 600px;
+}
+#q1{
+    border-top: 1px dotted black;
+    border-right: 4px double red;
+    border-bottom: 4px solid green;
+    border-left: 1px solid blue;
 }
 #p2{
     font-size: 14px;
+    border: 1px solid green;
 }
