@@ -2,15 +2,8 @@
     text-decoration: underline;
 }
 #qw{
-    color: blue;
-    font-size: 18px;
+    font-style: italic;
 }
-#p1{
-    
-}
-#qa{
-    color:red;
-}
-#q1{
-    color: green;
+#p2{
+    font-size: 14px;
 }
