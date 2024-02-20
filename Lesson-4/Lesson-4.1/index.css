@@ -2,11 +2,11 @@
     text-decoration: underline;
 }
 h1{
-    border:dashed red;
+    border:4px dashed red;
 }
 #qw{
     font-style: italic;
-    border: 1px solid greenyellow;
+    border: 3px solid turquoise;
     width: 600px;
     padding-top: 15px;
     padding-right: 15px;
@@ -23,13 +23,13 @@ h1{
     text-align: justify;
 }
 #q1{
-    border-top: 1px dotted black;
-    border-right: 4px double red;
-    border-bottom: 4px solid greenyellow;
-    border-left: 1px solid blue;
+    border-top: 2px dotted black;
+    border-right: 5px double red;
+    border-bottom: 5px solid orange;
+    border-left: 2px solid blue;
     margin-top: 15px;
 }
 #p4{
     font-size: 14px;
-    border: 1px solid greenyellow;
+    border: 2px solid fuchsia;
 }
