@@ -1,0 +1,26 @@
+#we{
+    text-decoration: underline;
+}
+h1{
+    border:dashed red;
+}
+#qw{
+    font-style: italic;
+    border: 1px solid greenyellow;
+    width: 600px;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+#q1{
+    border-top: 1px dotted black;
+    border-right: 4px double red;
+    border-bottom: 4px solid greenyellow;
+    border-left: 1px solid blue;
+    margin-top: 15px;
+}
+#p2{
+    font-size: 14px;
+    border: 1px solid greenyellow;
+}
