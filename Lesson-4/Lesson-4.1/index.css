@@ -12,6 +12,9 @@ h1{
     padding-right: 15px;
     padding-bottom: 15px;
     padding-left: 15px;
+    background-image: url('images/SG1998.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 #p1{
     text-align: right;
@@ -28,6 +31,8 @@ h1{
     border-bottom: 5px solid orange;
     border-left: 2px solid blue;
     margin-top: 15px;
+    background-image: url('images/skrip.gif');
+    background-repeat: repeat;
 }
 #p4{
     font-size: 14px;
