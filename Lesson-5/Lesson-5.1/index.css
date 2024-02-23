@@ -1,0 +1,8 @@
+table{
+    border-collapse: collapse;
+    background-color:orange;
+    color: greenyellow;
+}
+th{
+ height: 30px;
+}
