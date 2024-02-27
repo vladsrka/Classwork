@@ -24,6 +24,13 @@
     font-weight: bold;
     text-decoration: none;
 }
+.link2:hover{
+    text-decoration: underline;
+}
+a:active{
+    color: red;
+    font-style: italic;
+}
 p, a{
     margin: 0;
 }
