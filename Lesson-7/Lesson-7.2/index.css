@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    background-color: rgb(24, 24, 72);
+}
+header{
+    height: 60px;
+    padding-left: 165px;
+    display: flex;
+    background-color: #1D2F30;
+}
+ul li{
+    display: inline-block;
+    color: #fff;
+    
+}
+.logo{
+    display: block;
+    float: left;
+    width: 65px;
+    height: 20px;
+    padding: 20px 0 20px 0;
+
+}
+.bottons{
+    margin: 0;
+    width: 512px;
+    height: 24px;
+    padding: 20px 0 20px 200px;
+}
+a{
+    padding: 20px 0 20px 50px;
+}
