@@ -1,3 +1,82 @@
+@font-face{
+    font-family: 'Cormorant-Bold';
+    font-weight: 700;
+    src: url(./fonts/Cormorant/static/Cormorant-Bold.ttf);
+}
+@font-face{
+    font-family: 'OpenSans-Regular';
+    font-weight: 400;
+    src: url(./fonts/Opensans/OpenSans-Regular.ttf);
+}
+
+
+
 body{
     background-color: #1D2F30;
+}
+
+header{
+    font-family: OpenSans-Regular;
+    width: 100%;
+    min-height: 60px;
+}
+
+.logo{
+    display: inline-block;
+    padding: 20px 0px 0px 165px;
+}
+
+nav{
+    display: inline-block;
+    height: 24px;
+    padding: 18px 0px 0px 125px;
+    text-align: center;
+    vertical-align: top;
+}
+
+nav a{
+    height: 24px;
+    color: #FFFFFF;
+    font-size: 16px;
+    padding-right: 65px;
+    text-decoration: none;
+}
+
+.buttons{ 
+    display: inline-block;
+    height: 24px;
+    padding: 18px 170px 0px 0px;
+    vertical-align: top;
+    position: absolute;
+    right: 0;
+}
+
+.search{
+    padding-right: 65px;
+}
+
+
+
+.hero{
+    background: url(./images/1_1.png) no-repeat;
+    background-size: cover;
+    height: 550px;
+}
+
+h1{
+    font-family: Cormorant-Bold;
+    color: #FFFFFF;
+    width: 688px;
+    height: 125px;
+    margin: 0;
+    padding: 115px 0px 16px 165px;
+    font-size: 60px;
+}
+.hero-text{
+    font-family: OpenSans-Regular;
+    color: #FFFFFF;
+    width: 635px;
+    height: 72px;
+    font-size: 16px;
+    padding: 0px 0px 0px 165px;
 }
