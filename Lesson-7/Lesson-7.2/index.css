@@ -8,6 +8,11 @@
     font-weight: 400;
     src: url(./fonts/Opensans/OpenSans-Regular.ttf);
 }
+@font-face{
+    font-family: 'OpenSans-Bold';
+    font-weight: 700;
+    src: url(./fonts/Opensans/OpenSans-Bold.ttf);
+}
 
 
 
@@ -72,6 +77,7 @@ h1{
     padding: 115px 0px 16px 165px;
     font-size: 60px;
 }
+
 .hero-text{
     font-family: OpenSans-Regular;
     color: #FFFFFF;
@@ -79,4 +85,14 @@ h1{
     height: 72px;
     font-size: 16px;
     padding: 0px 0px 0px 165px;
+}
+
+.hero-link{
+    font-family: OpenSans-Bold;
+    font-size: 16px;
+    color: #BAE249;
+    width: 109px;
+    height: 23px;
+    text-decoration: none;
+    vertical-align: bottom;
 }
