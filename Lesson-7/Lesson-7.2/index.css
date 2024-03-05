@@ -48,21 +48,55 @@ nav a{
     color: #FFFFFF;
     font-size: 16px;
     line-height: 24px;
-    padding-right: 65px;
+    padding: 6px 7px 6px 7px;
+    margin-right: 65px;
     text-decoration: none;
+}
+
+nav a:hover{
+    color: #BAE249;
+}
+
+nav a:active{
+    color: #688B05;
+}
+
+nav a:focus{
+    border: solid #BAE249 1px;
 }
 
 .buttons{ 
     display: inline-block;
     height: 24px;
-    padding: 18px 170px 0px 0px;
+    padding: 18px 175px 0px 0px;
+    text-align: center;
     vertical-align: top;
     position: absolute;
     right: 0;
 }
 
 .search{
-    padding-right: 65px;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    padding: 3px;
+    margin-right: 65px;
+    content: url(./images/search.svg);
+}
+
+.log-in{
+    width: 24px;
+    height: 24px;
+    padding: 3px;
+    content: url(./images/log-in.svg);
+}
+
+.search:hover{
+    content: url(./images/search-hover.svg);
+}
+
+.search:focus{
+    border: solid #83A440 1px;
 }
 
 /* MAIN */
