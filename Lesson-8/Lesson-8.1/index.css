@@ -1,3 +1,7 @@
+@media print {
+    p{color: black !important}
+    a{display: none }
+}
 .title{
     color: black;
     font-size: 35px;
