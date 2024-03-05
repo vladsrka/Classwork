@@ -1,0 +1,339 @@
+@font-face{
+    font-family: 'Cormorant-Bold';
+    font-weight: 700;
+    src: url(./fonts/Cormorant/static/Cormorant-Bold.ttf);
+}
+@font-face{
+    font-family: 'OpenSans-Regular';
+    font-weight: 400;
+    src: url(./fonts/Opensans/OpenSans-Regular.ttf);
+}
+@font-face{
+    font-family: 'OpenSans-Bold';
+    font-weight: 700;
+    src: url(./fonts/Opensans/OpenSans-Bold.ttf);
+}
+
+
+
+body{
+    background-color: #1D2F30;
+}
+
+/* HEADER */
+
+header{
+    font-family: OpenSans-Regular;
+    width: 100%;
+    min-height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo{
+    display: inline-block;
+    padding: 20px 0px 0px 165px;
+}
+
+nav{
+    display: inline-block;
+    height: 24px;
+    padding: 18px 0px 0px 125px;
+    text-align: center;
+    vertical-align: top;
+}
+
+nav a{
+    height: 24px;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 6px 7px 6px 7px;
+    margin-right: 65px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #BAE249;
+}
+
+nav a:active{
+    color: #688B05;
+}
+
+nav a:focus{
+    border: solid #BAE249 1px;
+}
+
+.buttons{ 
+    display: inline-block;
+    height: 30px;
+    padding: 16px 175px 0px 0px;
+    text-align: center;
+    vertical-align: top;
+    position: absolute;
+    right: 0;
+}
+
+.buttons a{
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    padding: 3px;
+    border: solid #1D2F30 1px;
+    margin-right: 65px;
+    text-decoration: none;
+}
+
+.search{
+    content: url(./images/search.svg);
+}
+.search:hover{
+    content: url(./images/search-hover.svg);
+}
+.search:focus{
+    border: solid #83A440 1px;
+}
+.search:active{
+    content: url(./images/search-active.svg);
+}
+
+.log-in{
+    content: url(./images/log-in.svg);
+}
+.log-in:hover{
+    content: url(./images/log-in-hover.svg);
+}
+.log-in:focus{
+    border: solid #83A440 1px;
+}
+.log-in:active{
+    content: url(./images/log-in-active.svg);
+}
+
+
+/* MAIN */
+/* SECTION HERO */
+
+.hero{
+    background: url(./images/1_1.png) no-repeat;
+    background-size: cover;
+    height: 550px;
+}
+
+h1{
+    font-family: Cormorant-Bold;
+    color: #FFFFFF;
+    width: 688px;
+    height: 125px;
+    margin: 0;
+    padding: 115px 0px 16px 165px;
+    font-size: 60px;
+    line-height: 60px;
+}
+
+.hero-text{
+    font-family: OpenSans-Regular;
+    color: #FFFFFF;
+    width: 635px;
+    height: 72px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0px 0px 0px 165px;
+    margin-bottom: 24px;
+}
+
+.hero-link{
+    font-family: OpenSans-Bold;
+    font-size: 16px;
+    line-height: 21.79px;
+    color: #BAE249;
+    width: 109px;
+    height: 23px;
+    padding: 0px 3px 0px 3px;
+    margin-left: 162px;
+    text-decoration: none;
+}
+.hero-link::after{
+    content: url(./images/Arrow1.svg);
+}
+.hero-link:hover{
+    color: #91AC46;
+}
+.hero-link:hover::after{
+    content: url(./images/Arrow1-hover.svg);
+}
+.hero-link:focus{
+    border: solid #83A440 1px;
+}
+.hero-link:active{
+    color: #688B05;
+}
+.hero-link:active::after{
+    content: url(./images/Arrow1-active.svg);
+}
+
+
+/* SECTION PLANT-SPECIES */
+
+.plant-species{
+    width: 1110px;
+    height: 555px;
+    margin-top:  60px;
+    margin-bottom: 57px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-1, .card-2, 
+.card-3{
+    margin-right: 25px;
+}
+
+.card-1, .card-2, 
+.card-3, .card-4{
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    width: 254px;
+    height: 492px;
+    border: solid #0B1919 1px;
+}
+
+.rectangle-1, .rectangle-2, 
+.rectangle-3, .rectangle-4{
+    position: absolute;
+    width: 254px;
+    height: 180px;
+}
+
+.rectangle-1{
+    background: #0B1919 url(./images/Layer3.png) no-repeat center center;
+}
+.rectangle-2{
+    background: #0B1919 url(./images/Layer2.png) no-repeat center center;
+}
+.rectangle-3{
+    background: #0B1919 url(./images/Layer4.png) no-repeat center center;
+}
+.rectangle-4{
+    background: #0B1919 url(./images/Layer11.png) no-repeat center center;
+}
+
+.number-1, .number-2, 
+.number-3, .number-4{
+    margin: 0;
+    width: 24px;
+    height: 24px;
+    line-height: 19.38px;
+    font-size: 16px;
+    font-family: Cormorant-Bold;
+    margin: 1em;
+    color: #899D9D;
+    border: solid #899D9D 1px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+h3{
+    font-family: Cormorant-Bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin: 195px 15px 8px 15px;
+}
+
+.description-1, .description-2, 
+.description-3, .description-4{
+    font-family: OpenSans-Regular;
+    font-size: 16px;
+    line-height: 24px;
+    color: #899D9D;
+    width: 223px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+}
+
+.card-button1 , .card-button2, 
+.card-button3, .card-button4{
+    font-family: OpenSans-Regular;
+    font-size: 16px;
+    color: #BAE249;
+    background-color: #1D2F30;
+    border: solid #BAE249 1px;
+    text-decoration: none;
+    max-width: 145px;
+    max-height: 45px;
+    line-height: 24px;
+    padding: 10px 28px 10px 28px;
+    margin: auto auto 23px 15px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+}
+.card-button1:hover, .card-button2:hover, 
+.card-button3:hover, .card-button4:hover{
+    color: #0B1919;
+    background-color: #BAE249;
+}
+.card-button1:focus, .card-button2:focus, 
+.card-button3:focus, .card-button4:focus{
+    border: double #83A440 3px;
+}
+.card-button1:active, .card-button2:active, 
+.card-button3:active, .card-button4:active{
+    color: #0B1919;
+    background-color: #688B05;
+    border: solid #688B05 1px
+}
+
+.slider-button{
+    max-width: 163px;
+    max-height: 36px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slider-button h3{
+    font-family: Cormorant-Bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin: 26px 0px 0px 0px;
+    max-width: 163px;
+    max-height: 36px;
+    text-align: center;
+}
+
+.prev-button, .next-button{
+    max-width: 26px;
+}
+
+.prev-button{
+    margin-right: 17px;
+    padding: 3px;
+    content: url(./images/Arrow2.svg);
+}
+
+.next-button{
+    margin-left: 17px;
+    padding: 3px;
+    content: url(./images/Arrow21.svg);
+}
+
+.prev-button:hover{
+    content: url(./images/Arrow2-hover.svg);
+} 
+.next-button:hover{
+    content: url(./images/Arrow21-hover.svg);
+}
+.prev-button:focus, .next-button:focus{
+    border: solid #83A440 1px;
+}
+.prev-button:active{
+    content: url(./images/Arrow2-active.svg);
+} 
+.next-button:active{
+    content: url(./images/Arrow21-active.svg);
+}

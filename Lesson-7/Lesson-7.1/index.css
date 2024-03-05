@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+}
+p{
+    text-align: center;
+    padding-top: 20px;
+    color: #474747;
+    font-family: 'Lato', serif; 
+    font-size: 1em;
+}
+
+h1, h2{
+    text-align: center;
+    font-family: 'Bitter', serif;
+    text-transform: uppercase;
+    color: #464646;
+}
+
+h1{
+    font-size: 2.5em;
+    border-bottom: 1px ;
+    padding-bottom: 20px;
+}
+
+h2{
+    font-size: 2em;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.logo{
+    margin: 50px;
+}
+.logo:hover{
+    opacity: 0.6;
+}
+
+.batya{
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.buttons p{
+    background-color: #dbeaee;
+    color: #425c63;
+    border-radius: 100px;
+    text-transform: uppercase;
+    padding: 20px 0 20px 0;
+}
+.buttons p:hover{
+    background-color: #559fb4;
+    color: #fff;
+    font-weight: 800;
+}
+
+footer{
+    background-color: #464646;
+    padding-top: 30px;
+    padding-bottom: 45px;
+    margin-top: 60px;
+}
+footer p{
+    color: white;
+    vertical-align: middle;
+}
