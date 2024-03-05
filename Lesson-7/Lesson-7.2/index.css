@@ -67,37 +67,50 @@ nav a:focus{
 
 .buttons{ 
     display: inline-block;
-    height: 24px;
-    padding: 18px 175px 0px 0px;
+    height: 30px;
+    padding: 16px 175px 0px 0px;
     text-align: center;
     vertical-align: top;
     position: absolute;
     right: 0;
 }
 
-.search{
+.buttons a{
     width: 24px;
     height: 24px;
     line-height: 24px;
     padding: 3px;
+    border: solid #1D2F30 1px;
     margin-right: 65px;
+    text-decoration: none;
+}
+
+.search{
     content: url(./images/search.svg);
 }
-
-.log-in{
-    width: 24px;
-    height: 24px;
-    padding: 3px;
-    content: url(./images/log-in.svg);
-}
-
 .search:hover{
     content: url(./images/search-hover.svg);
 }
-
 .search:focus{
     border: solid #83A440 1px;
 }
+.search:active{
+    content: url(./images/search-active.svg);
+}
+
+.log-in{
+    content: url(./images/log-in.svg);
+}
+.log-in:hover{
+    content: url(./images/log-in-hover.svg);
+}
+.log-in:focus{
+    border: solid #83A440 1px;
+}
+.log-in:active{
+    content: url(./images/log-in-active.svg);
+}
+
 
 /* MAIN */
 /* SECTION HERO */
@@ -137,10 +150,29 @@ h1{
     color: #BAE249;
     width: 109px;
     height: 23px;
-    padding: 0px 53px 0px 165px;
+    padding: 0px 3px 0px 3px;
+    margin-left: 162px;
     text-decoration: none;
-    background: url(./images/Arrow1.png) no-repeat right center;
 }
+.hero-link::after{
+    content: url(./images/Arrow1.svg);
+}
+.hero-link:hover{
+    color: #91AC46;
+}
+.hero-link:hover::after{
+    content: url(./images/Arrow1-hover.svg);
+}
+.hero-link:focus{
+    border: solid #83A440 1px;
+}
+.hero-link:active{
+    color: #688B05;
+}
+.hero-link:active::after{
+    content: url(./images/Arrow1-active.svg);
+}
+
 
 /* SECTION PLANT-SPECIES */
 
@@ -239,6 +271,21 @@ h3{
     cursor: pointer;
     position: absolute;
     bottom: 0;
+}
+.card-button1:hover, .card-button2:hover, 
+.card-button3:hover, .card-button4:hover{
+    color: #0B1919;
+    background-color: #BAE249;
+}
+.card-button1:focus, .card-button2:focus, 
+.card-button3:focus, .card-button4:focus{
+    border: double #83A440 3px;
+}
+.card-button1:active, .card-button2:active, 
+.card-button3:active, .card-button4:active{
+    color: #0B1919;
+    background-color: #688B05;
+    border: solid #688B05 1px
 }
 
 .slider-button{
