@@ -181,6 +181,7 @@ h3{
     width: 223px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 0;
 }
 
 /* .card-button1, .card-button2, .card-button3, .card-button4{
@@ -197,8 +198,7 @@ h3{
     line-height: 24px;
     padding: 11px 28px 11px 28px;
     margin: auto auto 23px 15px;
-    display: block;
-    position: absolute;
-    text-align: center;
-
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
