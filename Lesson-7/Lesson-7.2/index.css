@@ -66,6 +66,7 @@ nav a{
 }
 
 /* MAIN */
+/* SECTION HERO */
 
 .hero{
     background: url(./images/1_1.png) no-repeat;
@@ -107,7 +108,7 @@ h1{
     background: url(./images/Arrow1.png) no-repeat right center;
 }
 
-
+/* SECTION PLANT-SPECIES */
 
 .plant-species{
     width: 1110px;
@@ -124,6 +125,8 @@ h1{
 
 .card-1, .card-2, .card-3, .card-4{
     display: inline-block;
+    position: relative;
+    vertical-align: top;
     width: 254px;
     height: 492px;
     border: solid #0B1919 1px;
@@ -149,7 +152,6 @@ h1{
 }
 
 .number-1, .number-2, .number-3, .number-4{
-    color: #899D9D;
     margin: 0;
     width: 24px;
     height: 24px;
@@ -157,10 +159,46 @@ h1{
     font-size: 16px;
     font-family: Cormorant-Bold;
     margin: 1em;
+    color: #899D9D;
     border: solid #899D9D 1px;
     border-radius: 50%;
     text-align: center;
 }
 
+h3{
+    font-family: Cormorant-Bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin: 195px 15px 8px 15px;
+}
 
+.description-1, .description-2, .description-3, .description-4{
+    font-family: OpenSans-Regular;
+    font-size: 16px;
+    line-height: 24px;
+    color: #899D9D;
+    width: 223px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+/* .card-button1, .card-button2, .card-button3, .card-button4{
+} */
+
+.card-button1 , .card-button2, .card-button3, .card-button4{
+    font-family: OpenSans-Regular;
+    font-size: 16px;
+    color: #BAE249;
+    border: solid #BAE249 1px;
+    text-decoration: none;
+    max-width: 145px;
+    max-height: 45px;
+    line-height: 24px;
+    padding: 11px 28px 11px 28px;
+    margin: auto auto 23px 15px;
+    display: block;
+    position: absolute;
+    text-align: center;
+
+}
