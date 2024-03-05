@@ -206,3 +206,37 @@ h3{
     position: absolute;
     bottom: 0;
 }
+
+.slider-button{
+    max-width: 163px;
+    max-height: 36px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slider-button h3{
+    font-family: Cormorant-Bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin: 26px 0px 0px 0px;
+    max-width: 163px;
+    max-height: 36px;
+    text-align: center;
+}
+
+.prev-button, .next-button{
+    border: 0;
+    max-width: 26px;
+    color: #BAE249;
+}
+
+.prev-button{
+    padding-right: 22px;
+    padding-left:0px ;
+}
+
+.next-button{
+    padding-left: 22px;
+    padding-right: 0;
+}
