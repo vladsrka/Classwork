@@ -1,0 +1,23 @@
+.nav{
+    overflow: hidden;
+    background-color: black;
+}
+
+a{
+    color: aquamarine;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+a:hover{
+    background-color: bisque;
+    color: black;
+}
+@media screen and (max-width: 600px){
+    a{
+        width: 100%;
+        float: none;
+        text-align: center;
+        padding: 20px 0px 20px 0px;
+    }
+}
