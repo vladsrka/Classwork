@@ -1,0 +1,16 @@
+.box-one{
+    background-color: aqua;
+    position: absolute;
+    left: 4em;
+    top: 4em;
+    right: 4em;
+    bottom: 4em;
+}
+.box-two{
+    background-color: aquamarine;
+    position: absolute;
+    left: 20em;
+    top: 20em;
+    right: 20em;
+    bottom: 20em;
+}
