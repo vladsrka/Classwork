@@ -20,10 +20,10 @@
 .box-one1{
     background-color: green;
     position: absolute;
-    width: 300px;
-    height: 300px;
-    left: 5px;
-    top: 5px;
+    width: 250px;
+    height: 250px;
+    left: 10px;
+    top: 10px;
 }
 
 .box-two2{
@@ -31,8 +31,8 @@
     background-color: red;
     width: 100px;
     height: 100px;
-    top: 10px;
-    left: 10px;
+    top: 30px;
+    left: 30px;
 }
 
 .box-three3{
@@ -40,8 +40,8 @@
     background-color: blue;
     width: 100px;
     height: 100px;
-    top: 20px;
-    left: 20px;
+    top: 60px;
+    left: 60px;
 }
 
 .box-four4{
@@ -49,6 +49,6 @@
     background-color: yellow;
     width: 100px;
     height: 100px;
-    top: 30px;
-    left: 30px;
+    top: 90px;
+    left: 90px;
 }
