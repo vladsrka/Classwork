@@ -6,6 +6,7 @@
     right: 4em;
     bottom: 4em;
 }
+
 .box-two{
     background-color: aquamarine;
     position: absolute;
@@ -13,4 +14,41 @@
     top: 20em;
     right: 20em;
     bottom: 20em;
+}
+
+
+.box-one1{
+    background-color: green;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 5px;
+    top: 5px;
+}
+
+.box-two2{
+    position: absolute;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    top: 10px;
+    left: 10px;
+}
+
+.box-three3{
+    position: absolute;
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    top: 20px;
+    left: 20px;
+}
+
+.box-four4{
+    position: absolute;
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    top: 30px;
+    left: 30px;
 }
