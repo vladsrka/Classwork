@@ -1,0 +1,18 @@
+.liner-gradient {
+    width: 400px;
+    height: 400px;
+    background-image: linear-gradient(20deg, #F08080, #00FFFF 70%, #00FF7F);
+}
+
+.repeat-gradient {
+    width: 400px;
+    height: 400px;
+    background-image: linear-gradient(90deg, #FF1493, #DC143C, #4169E1);
+    background-size: 100px 100%;
+}
+
+.repeating-linear-gradient {
+    width: 400px;
+    height: 400px;
+    background-image: repeating-linear-gradient(to top right, #BC8F8F 60px, #00FA9A 120px, #D2B48C 121px);
+}
