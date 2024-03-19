@@ -7,7 +7,7 @@
     border: solid 1px gainsboro;
     padding: 20px;
     box-shadow: 0 0 10px gainsboro;
-    margin: 40px;
+    margin: 50px;
 }
 
 /* .card:hover {
@@ -16,7 +16,7 @@
     transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 } */
 
-.card {
+/* .card {
     animation: rotate-left 4s 5 both;
 }
 
@@ -29,4 +29,8 @@
         transform: rotateY(360deg);
         transform-origin: left;
     }
+} */
+
+.card:hover {
+    transform: scale(1.2);
 }
