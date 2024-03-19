@@ -41,10 +41,16 @@ i {
 
 button {
     font-size: 20px;
+    width: 140px;
     border: none;
     background-color: unset;
     color: blue;
     padding-top: 5px;
+}
+
+i:hover {
+    transform: perspective(500px) rotate3d(30, 90, 0, 40deg);
+    color: blue;
 }
 
 @media screen and (max-width: 350px) {
