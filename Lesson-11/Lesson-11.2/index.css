@@ -1,0 +1,15 @@
+.card img {
+    width: 350px;
+}
+
+.card {
+    display: inline-block;
+    border: solid 1px gainsboro;
+    padding: 20px;
+    box-shadow: 0 0 10px gainsboro;
+    margin: 40px;
+}
+
+.card:hover {
+    transform: perspective(500px) rotate3d(0, 0, 50, 20deg);
+}
