@@ -1,0 +1,60 @@
+.container {
+    margin: 10px 0px 0px 80px;
+}
+
+label {
+    width: 15%;
+    float: left;
+    font-size: 20px;
+}
+
+.input, .icons {
+    margin-left: 15%;
+    width: calc(100%-246px);
+}
+
+.form-group {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.input input {
+    box-sizing: content-box;
+    font-size: 20px;
+    padding: 7px 0px 7px 0px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(30, 48, 80);
+}
+
+i {
+    font-size: 40px;
+    padding-right: 1.2vw;
+}
+
+.form-group:nth-child(3) .input {
+    float: left;
+    margin-left: 0;
+}
+
+button {
+    font-size: 20px;
+    width: 140px;
+    border: none;
+    background-color: unset;
+    color: blue;
+    padding-top: 5px;
+}
+
+i:hover {
+    transform: perspective(500px) rotate3d(30, 90, 0, 40deg);
+    color: blue;
+}
+
+@media screen and (max-width: 350px) {
+    .container {
+        margin: 10px 0px 0px 5px;
+    }    
+}
