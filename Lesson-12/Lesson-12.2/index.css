@@ -7,7 +7,7 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .main1 {
