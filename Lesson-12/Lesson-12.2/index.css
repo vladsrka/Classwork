@@ -1,0 +1,23 @@
+header, footer {
+    height: 50px;
+    background-color: gray;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.main1 {
+    height: 100px;
+    background-color: yellow;
+    flex-grow: 2;
+}
+
+.main2 {
+    height: 100px;
+    background-color: aquamarine;
+    flex-grow: 1;
+}
