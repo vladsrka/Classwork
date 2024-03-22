@@ -14,9 +14,9 @@ main{
 }
 
 .main1 {
-    width: 600px;
-    height: 320px;
-    margin: 10px;
+    width: 48vw;
+    height: 22vw;
+    margin: 1vw;
     background-color: green;
 }
 
@@ -28,13 +28,32 @@ main{
 }
 
 .main2, .main3 {
-    width: 200px;
-    height: 150px;
-    margin: 10px;
+    width: 24vw;
+    height: 10vw;
+    margin: 1vw;
     background-color: purple;
 }
 
 
 @media screen and (max-width:800px) {
-    
+    .main1 {
+        width: 50vw;
+    }
+    .main23 {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .main23 {
+        flex-wrap: wrap;
+    }
+    .main1 {
+        flex: auto;
+    }
+    .main2, .main3 {
+        width: 50vw;
+        flex: auto;
+    }
 }
