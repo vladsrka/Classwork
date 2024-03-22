@@ -21,3 +21,13 @@ main{
     background-color: aquamarine;
     flex-grow: 1;
 }
+
+@media screen and (max-width:800px) {
+    .main1 {
+        width: 100%;
+    }
+    
+    .main2 {
+       width: 100%;
+    }
+}
