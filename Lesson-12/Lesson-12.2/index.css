@@ -1,0 +1,33 @@
+header, footer {
+    height: 50px;
+    background-color: gray;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.main1 {
+    height: 100px;
+    background-color: yellow;
+    flex-grow: 2;
+}
+
+.main2 {
+    height: 100px;
+    background-color: aquamarine;
+    flex-grow: 1;
+}
+
+@media screen and (max-width:800px) {
+    .main1 {
+        width: 100%;
+    }
+    
+    .main2 {
+       width: 100%;
+    }
+}
