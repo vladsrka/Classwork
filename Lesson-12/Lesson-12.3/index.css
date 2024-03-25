@@ -2,8 +2,6 @@ header, footer {
     height: 50px;
     background-color: gray;
     color: white;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 main{
@@ -11,13 +9,18 @@ main{
    flex-direction: row;
    justify-content: center;
    flex-wrap: wrap;
+   font-size: 40px;
+   color: aquamarine;
 }
 
 .main1 {
-    width: 48vw;
-    height: 22vw;
-    margin: 1vw;
+    min-height: 400px;
+    margin: 20px;
     background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: auto;
 }
 
 .main23 {
@@ -25,35 +28,59 @@ main{
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
+    flex: 0 0 300px;
+    margin: 20px;
+    margin-left: 0;
 }
 
 .main2, .main3 {
-    width: 24vw;
-    height: 10vw;
-    margin: 1vw;
+    min-height: 200px;
     background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: auto;
+}
+
+.main2 {
+    margin-bottom: 10px;
+}
+
+.main3 {
+    margin-top: 10px;
 }
 
 
 @media screen and (max-width:800px) {
     .main1 {
-        width: 50vw;
+        margin-bottom: 0;
+        flex: 0 1 100%;
     }
     .main23 {
+        flex: 1 1 100%;
         flex-direction: row;
-        flex-wrap: nowrap;
+        margin: 20px;
+    }
+    .main2 {
+        margin: 0;
+        margin-right: 10px;
+    }
+    .main3 {
+        margin: 0;
+        margin-left: 10px;
     }
 }
 
 @media screen and (max-width:600px) {
     .main23 {
-        flex-wrap: wrap;
+        flex-direction: column;
     }
-    .main1 {
-        flex: auto;
+    .main2 {
+        margin: 0;
+        margin-bottom: 10px;
     }
-    .main2, .main3 {
-        width: 50vw;
-        flex: auto;
+    .main3 {
+        margin: 0;
+        margin-top: 10px;
     }
 }
