@@ -1,12 +1,11 @@
-.main {
-    display: flex;
+h1 {
+    text-align: center;
 }
 
 .conteiner {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    
+    justify-content: space-around;
 }
 
 .step {
@@ -24,9 +23,4 @@
     color: #0B2349;
     display: table;
     margin: 20px auto;
-}
-
-
-h1 {
-    text-align: center;
 }
