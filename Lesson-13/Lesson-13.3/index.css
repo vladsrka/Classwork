@@ -1,0 +1,29 @@
+.conteiner {
+    display: grid;
+    margin: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    height: 50vh;
+    font-size: 4vh;
+    color: white;
+}
+
+.chet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 8px;
+    
+}
+
+.od, .dva, .tre, .chet {
+    padding: 8px;
+    background-color: rgb(4, 220, 4);
+}
+
+.chetod, .chetdva, 
+.chettre, .chetchet {
+    padding: 8px;
+    background-color: rgb(91, 250, 91);
+}
