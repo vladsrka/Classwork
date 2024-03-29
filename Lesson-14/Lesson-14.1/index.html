@@ -11,6 +11,99 @@
 </head>
 
 <body>
+    <script>
+        // var name = "Tania";
+        // name = "Гагарин сказал 'Поехали' и махнул рукой";
+        // var frase = `'Поехали - ${name}'`;
+        // console.log(frase);
+
+        // var num = 6;
+        // console.log(num-- + ++num);
+
+        // console.log(50 - 15 * 7 + 17 / 3);
+
+        // var f = 115;
+        // console.log(f % 75);
+
+        // var q = "Я пошел на";
+        // var w = "Я люблю свою";
+        // var e = "работу";
+        // console.log(q + e);
+        // console.log(w + e);
+
+
+        // var a = 50 - 15 * 7 + 17 / 3;
+        // var b = 115 % 75;
+        // result = a == b;
+        // resultq = (a == b) || (a < b);
+        // resultw = (a == b) && (a > b);
+        // console.log(result);
+        // console.log(resultq);
+        // console.log(resultw);
+
+        // var s = 80;
+        // var street = 'street';
+        // results = (s >= 100) || (s>80 && street == 'Main Street');
+        // console.log(results);
+
+        // var s = prompt('Ведите площадь', 80);
+        // var street = prompt("Ведите улицу");
+        // resulte = (s >= 100) || (s>80 && street == 'Main Street');
+        // alert(resulte);
+
+        // var sp = prompt('Введите скорость кмч');
+        // var dis = prompt("Ведите расстояние км");
+        // resultк = (dis / sp);
+        // alert(resultк);
+
+        // var a = prompt('Ведите площадь', 80);
+        // console.log(a + 10);
+
+        // var z = prompt('Введите размер заработной платы');
+        // z = parseInt(z);
+        // var ras = z - (z * 0.1) - 270 - 80 * 5;
+        // var ost = z - ras;
+        // alert(`Пользователь ввел ${z} \n Остаток: ${ost} \n Расход: ${ras}`);
+
+        // var s = prompt('Ведите площадь');
+        // if (s < 80) {
+        //     console.log('Квартира не подходит!')
+        // }
+        // else {
+        //     console.log('Квартира подходит!')
+        // }
+
+        // var s = prompt('Ведите площадь');
+        // var street = prompt('Ведите улицу');
+        // if (s < 80) {
+        //     console.log('Квартира не подходит!')
+        //     if (street == "Main Street") {
+        //         console.log('Квартира подходит! улица подходит!')
+        //     }
+        //     else {
+        //         console.log('Квартира подходит!')
+        //     }
+        // }
+        // else {
+        //     console.log('Квартира подходит!')
+        // }
+
+        var s = prompt('Ведите площадь');
+
+        if (s == null || s == '') {
+            console.log("Вы ничего не ввели!")
+        }
+        else if (!Number(s)) {
+            console.log("Вы ввели не число!")
+        }
+        else if (parseFloat(s) <= 0) {
+            console.log("Нужно ввести положительное число!")
+        }
+        else {
+            console.log("Все отлично!")
+        }
+
+    </script>
 </body>
 
 
