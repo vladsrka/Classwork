@@ -91,16 +91,16 @@
         var s = prompt('Ведите площадь');
 
         if (s == null || s == '') {
-            console.log("Вы ничего не ввели!")
+            alert("Вы ничего не ввели!")
         }
-        else if (!Number(s)) {
-            console.log("Вы ввели не число!")
+        else if (isNaN(s)) {
+            alert("Вы ввели не число!")
         }
         else if (parseFloat(s) <= 0) {
-            console.log("Нужно ввести положительное число!")
+            alert("Нужно ввести положительное число, не равное нулю!")
         }
         else {
-            console.log("Все отлично!")
+            alert("Все отлично!")
         }
 
     </script>
