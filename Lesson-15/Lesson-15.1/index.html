@@ -100,13 +100,39 @@
         // }
 
 
-        let calc = 0;
-        while (calc <= 100) {
-            console.log(calc);
-            calc += 10
-        }
+        // let calc = 0;
+        // while (calc <= 100) {
+        //     console.log(calc);
+        //     calc += 10
+        // }
+
+        // let number = 0;
+        // let result;
+        // do {
+        //     if (number > 20) {
+        //         alert('Вы задумали число больше 20');
+        //         break;
+        //     }
+        //     result = confirm(`Число ${number} я угадал?`)
+        //     number += 1;
+
+        // } while (number <= 20 && !result);
 
 
+        let number = 13;
+        let result;
+        do {
+            result = parseInt(prompt('Угадайте число от 1 до 20'));
+            if (result < 1 || result > 20) {
+                alert('Вводите число от 1 до 20');
+            }
+            else if (result == number) {
+                alert('Угадал');
+            }
+            else {
+                alert(`Не угадал`);
+            }
+        } while (result !== number);
 
 
     </script>
