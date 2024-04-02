@@ -13,6 +13,29 @@
 
 <body>
     <script>
+
+        let number = 34;
+        let numberuser = prompt('Введитe целое положительное число:');
+        if (+numberuser == null || +number == '') {
+            alert("Вы ничего не ввели!");
+        }
+        else if (isNaN(numberuser)) {
+            alert("Вы ввели не число!");
+        }
+        else if (parseFloat(numberuser) <= 0) {
+            alert("Нужно ввести положительное число!");
+        }
+        if (Number(numberuser) == number) {
+            alert('Вы угадали число!');
+        }
+        else if (Number(numberuser) < number) {
+            alert('Вы не угадали. Ваше число меньше загаданного!');
+        }
+        else {
+            alert('Вы не угадали. Ваше число больше загаданного!');
+        }
+
+
     </script>
 </body>
 
