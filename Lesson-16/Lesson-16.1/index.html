@@ -76,23 +76,58 @@
         // alert(func4());
 
 
-        function func2() {
-            let num = prompt('Введите число:');
-            if (isNaN(+num)) {
-                return 0;
-            } else {
-                return parseInt(+num);
-            }
-        }
-        function func3(num1, num2) {
-            return (num1 ** 2 + num2 ** 2);
-        }
-        function func5() {
-            return (func3(func2(), func2()));
-        }
-        document.write(`Ваш результат = ${func5()}`);
+        // function func2() {
+        //     let num = prompt('Введите число:');
+        //     if (isNaN(+num)) {
+        //         return 0;
+        //     } else {
+        //         return parseInt(+num);
+        //     }
+        // }
+        // function func3(num1, num2) {
+        //     return (num1 ** 2 + num2 ** 2);
+        // }
+        // function func5() {
+        //     return (func3(func2(), func2()));
+        // }
+        // document.write(`Ваш результат = ${func5()}`);
 
-        
+        // let arr = ['vlad', 'vlad', 'tany', 3, 67];
+        // console.log(`${arr[0]}, ${arr[2]}, ${arr[4]}`);
+
+
+        // function getarr(arr) {
+        //     arr.push('ЖАБА');
+        //     arr[arr.length - 2] = 'ПРЕДПОСЛЕДНЯЯ ЖАБА';
+        //     for (let i = 0; i < arr.length; i++)
+        //         console.log(arr[i]);
+        // }
+        // getarr([3, 4, 5, 7, 9]);
+        // getarr([4, 353, 434, 43434, 434, 4334, 5446, 76868])
+
+
+        // function getarr(arr) {
+        //     let num = arr.length, count3 = 0;
+        //     for (let m = 0; m < num; m++) {
+        //         count3 += arr[m];
+        //     }
+        //     console.log(`${arr}`);
+        //     console.log(`Сумма элементов строки: ${count3}`);
+        // }
+        // getarr([3, 4, 5, 7, 9]);
+
+
+        function getarr(arr) {
+            let num = arr.length, count3 = 0;
+            for (let m = 0; m < num; m++) {
+                arr[m] = -(arr[m]);
+                count3 += arr[m];
+            }
+            console.log(`${arr}`);
+            console.log(`Сумма элементов строки: ${count3}`);
+        }
+        getarr([3, 4, 5, 7, 9]);
+
 
     </script>
 </body>
