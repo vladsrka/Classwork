@@ -13,7 +13,88 @@
 
 <body>
     <script>
-        "use strict";
+        // "use strict";
+        // function getName() {
+        //     let name = prompt('Введите ваше имя:');
+        //     console.log('Привет ' + name);
+        //     alert('Привет ' + name);
+        // }
+        // getName();
+
+
+        // function getName() {
+        //     console.log('Привет ' + name);
+        //     alert('Привет ' + name);
+        // }
+        // getName('Vlad');
+
+
+        // function getNumber(number1, number2, number3) {
+        //     let number1 = parseInt(prompt('Ведите число 1:'));
+        //     let number2 = parseInt(prompt('Ведите число 2:'));
+        //     let number3 = parseInt(prompt('Ведите число 3:'));
+        //     let sum = number1 + number2 + number3;
+        //     alert('Среднее арифметическое: ' + sum);
+        // }
+        // getNumber();
+
+
+        // function func1() {
+        //     let value = prompt('Введите число:');
+        //     if (+value == "" || !Number(+value)) {
+        //         value = 0;
+        //         alert(`Результат: ${value}`)
+        //     } else if (!Number.isInteger(+value)) {
+        //         alert(`Результат: ${parseInt(value)}`)
+        //     } else {
+        //         alert(`Результат: ${value}`)
+        //     }
+        // }
+
+
+        // function func2() {
+        //     let num = prompt('Введите число:');
+        //     if (isNaN(+num)) {
+        //         return 0;
+        //     } else {
+        //         return parseInt(+num);
+        //     }
+        // }
+
+
+        // function func3(num1, num2) {
+        //     return (num1 ** 2 + num2 ** 2);
+        // }
+
+
+        // function func4() {
+        //     let num1 = prompt('Введите целое число:');
+        //     let num2 = prompt('Введите целое число:');
+        //     let sum = num1 + num2;
+        //     return (sum < 10)
+        // }
+        // alert(func4());
+
+
+        function func2() {
+            let num = prompt('Введите число:');
+            if (isNaN(+num)) {
+                return 0;
+            } else {
+                return parseInt(+num);
+            }
+        }
+        function func3(num1, num2) {
+            return (num1 ** 2 + num2 ** 2);
+        }
+        function func5() {
+            let sum = func3(func2(), func2());
+            return sum;
+        }
+        alert(func5());
+
+
+
     </script>
 </body>
 
