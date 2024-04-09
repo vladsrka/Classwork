@@ -26,17 +26,44 @@
         // }
         // console.log(getarr(['vlad', 'artem', 'arcadiy', 'tanua']));
 
+        // function getarr(arr) {
+        //     let num = arr.length;
+        //     for (let i = 0; i < num; i++) {
+        //         let nex = arr[i].length - 1;
+        //         if (arr[i][nex] == 'a') {
+        //             arr[i] = 'sos';
+        //         }
+        //     }
+        //     return arr;
+        // }
+        // console.log(getarr(['vlad', 'artema', 'arcadiy', 'tanua']));
+
+        // function getarr(arr) {
+        //     let num = arr.length;
+        //     for (let i = 0; i < num; i++) {
+        //         let nex = arr[i].length;
+        //         for (let j = 0; j < nex; j++) {
+        //             if (arr[i][j] == 'a') {
+        //                 arr[i] = 'sos';
+        //             }
+        //             continue;
+        //         }
+        //     }
+        //     return arr;
+        // }
+        // console.log(getarr(['vld', 'artema', 'arcadiy', 'tanua']));
+
         function getarr(arr) {
             let num = arr.length;
             for (let i = 0; i < num; i++) {
-                let nex = arr[i].length - 1;
-                if (arr[i][nex] == 'a') {
-                    arr[i] = 'sos';
+                let nex = arr[i].length;
+                for (let j = 0; j < nex; j++) {
+                    console.log(arr[i][j]);
                 }
             }
             return arr;
         }
-        console.log(getarr(['vlad', 'artema', 'arcadiy', 'tanua']));
+        console.log(getarr([[4, 5], [6, 7], [4, 6], [4, 8]]));
 
 
     </script>
