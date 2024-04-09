@@ -82,12 +82,25 @@
         // console.log(obj[element]);
 
 
-        let obj = { name: 'Иван', lastname: 'Иванов', age: 35 };
-        let element = prompt(`Что вы хотите изменить? name/lastname/age`);
-        let newelement = prompt(`Введите новое значение:`);
-        obj[element] = newelement;
-        console.log(obj);
+        // let obj = { name: 'Иван', lastname: 'Иванов', age: 35 };
+        // let element = prompt(`Что вы хотите изменить? name/lastname/age`);
+        // let newelement = prompt(`Введите новое значение:`);
+        // obj[element] = newelement;
+        // console.log(obj);
 
+
+        // let apple = { color: 'red', weight: 200, origin: 'Turkey', price: 3.5 };
+        // let element = prompt(`Введите название поля:`);
+        // (element in apple) ? console.log(apple[element]) : alert('Такого поля нет');
+
+
+        let apple = { color: 'red', weight: 200, origin: 'Turkey', price: 3.5 };
+        let element = prompt(`Введите название поля:`);
+        (element in apple) ? console.log(apple[element]) : alert('Такого поля нет');
+        let keys;
+        for (keys in apple) {
+            console.log(apple[keys]);
+        }
 
     </script>
 </body>
