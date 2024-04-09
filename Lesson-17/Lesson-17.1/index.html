@@ -55,13 +55,16 @@
 
         function getarr(arr) {
             let num = arr.length;
+            let count2, count3 = 0;
             for (let i = 0; i < num; i++) {
                 let nex = arr[i].length;
+                count2 = 0;
                 for (let j = 0; j < nex; j++) {
-                    console.log(arr[i][j]);
+                    count2 += arr[i][j];
                 }
+                count3 += count2;
             }
-            return arr;
+            console.log(`Сумма всех элементов: ${count3}`);
         }
         console.log(getarr([[4, 5], [6, 7], [4, 6], [4, 8]]));
 
