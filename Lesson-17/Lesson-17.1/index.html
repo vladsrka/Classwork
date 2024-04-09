@@ -53,20 +53,32 @@
         // }
         // console.log(getarr(['vld', 'artema', 'arcadiy', 'tanua']));
 
-        function getarr(arr) {
-            let num1 = arr.length;
-            let sum1, sum2 = 0;
-            for (let i = 0; i < num1; i++) {
-                let num2 = arr[i].length;
-                sum1 = 0;
-                for (let j = 0; j < num2; j++) {
-                    sum1 += arr[i][j];
-                }
-                sum2 += sum1;
-            }
-            console.log(`Сумма всех элементов: ${sum2}`);
-        }
-        console.log(getarr([[4, 5], [6, 7], [4, 6], [4, 8]]));
+        // function getarr(arr) {
+        //     let num1 = arr.length;
+        //     let sum1, sum2 = 0;
+        //     for (let i = 0; i < num1; i++) {
+        //         let num2 = arr[i].length;
+        //         sum1 = 0;
+        //         for (let j = 0; j < num2; j++) {
+        //             sum1 += arr[i][j];
+        //         }
+        //         sum2 += sum1;
+        //     }
+        //     console.log(`Сумма всех элементов: ${sum2}`);
+        // }
+        // console.log(getarr([[4, 5], [6, 7], [4, 6], [4, 8]]));
+
+
+        // let fruits = { apples: 'apples', bananas: 'bananas', limons: 'limons' };
+        // console.log(fruits['bananas']);
+
+
+        // let obj = { name: 'Иван', lastname: 'Иванов', age: 35 };
+        // console.log(obj);
+
+        let obj = { name: 'Иван', lastname: 'Иванов', age: 35 };
+        let element = prompt(`Что вы зотите узнать? name/lastname/age`);
+        console.log(obj[element]);
 
 
     </script>
