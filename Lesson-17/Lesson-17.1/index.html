@@ -94,13 +94,32 @@
         // (element in apple) ? console.log(apple[element]) : alert('Такого поля нет');
 
 
-        let apple = { color: 'red', weight: 200, origin: 'Turkey', price: 3.5 };
-        let element = prompt(`Введите название поля:`);
-        (element in apple) ? console.log(apple[element]) : alert('Такого поля нет');
-        let keys;
-        for (keys in apple) {
-            console.log(apple[keys]);
+        // let apple = { color: 'red', weight: 200, origin: 'Turkey', price: 3.5 };
+        // let element = prompt(`Введите название поля:`);
+        // (element in apple) ? console.log(apple[element]) : alert('Такого поля нет');
+        // let keys;
+        // for (keys in apple) {
+        //     console.log(apple[keys]);
+        // }
+
+
+        // let market = { apples: 10, oranges: 5, pears: 15, bananas: 0, lemons: 7 };
+        // for (let key in market) {
+        //     if (market[key] < 5 || market[key] >= 10) {
+        //         delete market[key]
+        //     }
+        // }
+        // console.log(market);
+
+
+        let market = { apples: 10, oranges: 5, pears: 15, bananas: 0, lemons: 7 };
+        let max = 0;
+        for (let key in market) {
+            if (max < market[key]) {
+                max = market[key]
+            }
         }
+        console.log(max);
 
     </script>
 </body>
