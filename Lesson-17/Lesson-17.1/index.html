@@ -76,9 +76,17 @@
         // let obj = { name: 'Иван', lastname: 'Иванов', age: 35 };
         // console.log(obj);
 
+
+        // let obj = { name: 'Иван', lastname: 'Иванов', age: 35 };
+        // let element = prompt(`Что вы хотите узнать? name/lastname/age`);
+        // console.log(obj[element]);
+
+
         let obj = { name: 'Иван', lastname: 'Иванов', age: 35 };
-        let element = prompt(`Что вы зотите узнать? name/lastname/age`);
-        console.log(obj[element]);
+        let element = prompt(`Что вы хотите изменить? name/lastname/age`);
+        let newelement = prompt(`Введите новое значение:`);
+        obj[element] = newelement;
+        console.log(obj);
 
 
     </script>
