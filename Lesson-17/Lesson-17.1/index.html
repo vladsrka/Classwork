@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/icon.png" type="image/png">
+    <link rel="stylesheet" href="./normaliz.css" type="text/css">
+    <link rel="stylesheet" href="./index.css" type="text/css">
+    <title>Lesson-17.1</title>
+</head>
+
+<body>
+    <script>
+        "use strict";
+        // let str = 'Hello';
+        // console.log(str[0]);
+
+        // function getarr(arr) {
+        //     for (let i = 0; i < arr.length; i++) {
+        //         if (arr[i][0] == 'a') {
+        //             arr[i] = 'array';
+        //         }
+        //     }
+        //     return arr;
+        // }
+        // console.log(getarr(['vlad', 'artem', 'arcadiy', 'tanua']));
+
+        // function getarr(arr) {
+        //     let num = arr.length;
+        //     for (let i = 0; i < num; i++) {
+        //         let nex = arr[i].length - 1;
+        //         if (arr[i][nex] == 'a') {
+        //             arr[i] = 'sos';
+        //         }
+        //     }
+        //     return arr;
+        // }
+        // console.log(getarr(['vlad', 'artema', 'arcadiy', 'tanua']));
+
+        // function getarr(arr) {
+        //     let num = arr.length;
+        //     for (let i = 0; i < num; i++) {
+        //         let nex = arr[i].length;
+        //         for (let j = 0; j < nex; j++) {
+        //             if (arr[i][j] == 'a') {
+        //                 arr[i] = 'sos';
+        //             }
+        //             continue;
+        //         }
+        //     }
+        //     return arr;
+        // }
+        // console.log(getarr(['vld', 'artema', 'arcadiy', 'tanua']));
+
+        // function getarr(arr) {
+        //     let num1 = arr.length;
+        //     let sum1, sum2 = 0;
+        //     for (let i = 0; i < num1; i++) {
+        //         let num2 = arr[i].length;
+        //         sum1 = 0;
+        //         for (let j = 0; j < num2; j++) {
+        //             sum1 += arr[i][j];
+        //         }
+        //         sum2 += sum1;
+        //     }
+        //     console.log(`Сумма всех элементов: ${sum2}`);
+        // }
+        // console.log(getarr([[4, 5], [6, 7], [4, 6], [4, 8]]));
+
+
+        // let fruits = { apples: 'apples', bananas: 'bananas', limons: 'limons' };
+        // console.log(fruits['bananas']);
+
+
+        // let obj = { name: 'Иван', lastname: 'Иванов', age: 35 };
+        // console.log(obj);
+
+
+        // let obj = { name: 'Иван', lastname: 'Иванов', age: 35 };
+        // let element = prompt(`Что вы хотите узнать? name/lastname/age`);
+        // console.log(obj[element]);
+
+
+        // let obj = { name: 'Иван', lastname: 'Иванов', age: 35 };
+        // let element = prompt(`Что вы хотите изменить? name/lastname/age`);
+        // let newelement = prompt(`Введите новое значение:`);
+        // obj[element] = newelement;
+        // console.log(obj);
+
+
+        // let apple = { color: 'red', weight: 200, origin: 'Turkey', price: 3.5 };
+        // let element = prompt(`Введите название поля:`);
+        // (element in apple) ? console.log(apple[element]) : alert('Такого поля нет');
+
+
+        // let apple = { color: 'red', weight: 200, origin: 'Turkey', price: 3.5 };
+        // let element = prompt(`Введите название поля:`);
+        // (element in apple) ? console.log(apple[element]) : alert('Такого поля нет');
+        // let keys;
+        // for (keys in apple) {
+        //     console.log(apple[keys]);
+        // }
+
+
+        // let market = { apples: 10, oranges: 5, pears: 15, bananas: 0, lemons: 7 };
+        // for (let key in market) {
+        //     if (market[key] < 5 || market[key] >= 10) {
+        //         delete market[key]
+        //     }
+        // }
+        // console.log(market);
+
+
+        let market = { apples: 10, oranges: 5, pears: 15, bananas: 0, lemons: 7 };
+        let max = 0;
+        for (let key in market) {
+            if (max < market[key]) {
+                max = market[key]
+            }
+        }
+        console.log(max);
+
+    </script>
+</body>
+<script src="script.js?v=1"></script>
+
+</html>
