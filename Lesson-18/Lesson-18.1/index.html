@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <button onclick="result">Создать объект</button>
     <script>
         "use strict";
 
@@ -116,6 +117,26 @@
 
         function getLessons() {
             return prompt('Введите количество занятий');
+        }
+
+        function createUserObject(name, lessonsSize) {
+            let lessonObject = {};
+            for (let i = 1; i <= lessonsSize; i++) {
+                lessonObject[i] = getData(i);
+            }
+            let user = {
+                name: name,
+                lesson: lessonObject
+            }
+            // console.log(user);
+            return user;
+        }
+
+        function result() {
+            let name = getName();
+            let lessons = getData();
+            let user = createUserObject(name, lessons);
+            console.log(user);
         }
 
     </script>
