@@ -132,10 +132,15 @@
             return user;
         }
 
+        function calcScore(lesson) {
+
+        }
+
         function result() {
             let name = getName();
             let lessons = getData();
             let user = createUserObject(name, lessons);
+            calcScore(user, lessons)
             console.log(user);
         }
 
