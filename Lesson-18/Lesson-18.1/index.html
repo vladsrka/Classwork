@@ -67,9 +67,9 @@
             let name;
             do {
                 name = prompt('Введите имя пользователя');
-                if (name = '' || name == null)
+                if (name == '' || name == null)
                     alert('Вы ничего не ввели');
-            } while (name = '' || name == null)
+            } while (name == '' || name == null)
             return name;
         }
 
@@ -107,7 +107,7 @@
                 } else {
                     size = parseInt(size);
                 }
-            } while (size != parseInt(size))
+            } while (size != parseInt(size));
             return size;
         }
 
