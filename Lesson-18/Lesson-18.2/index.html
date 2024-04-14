@@ -75,18 +75,26 @@
                 rating++;
             }
             average /= rating;
-            return average;
+            let aver = parseFloat(average.toFixed(2));
+            console.log(`Средний балл: ${aver}`);
         }
 
-
+        function nextCourse(average) {
+            let ever = average;
+            aver = parseFloat(aver.toFixed(2));
+            let misPoints = 7.5 - aver;
+            (+aver >= 7.5) ?
+                console.log(`${aver} Баллов достаточно для прохождения на следующий курс`) :
+                console.log(`${aver} Баллов не достаточно для прохождения на следующий курс.\nВам нехватает ${misPoints}`);
+        }
 
         function result() {
             let name = getName();
             let lessons = getData();
             let user = createUserObject(name, lessons);
-            let average = calcScore(user.lessons);
             console.log(user);
-            console.log(average);
+            let average = calcScore(user['lessons']);
+            let points = nextCourse(average);
         }
 
     </script>
