@@ -77,15 +77,14 @@
             average /= rating;
             let aver = parseFloat(average.toFixed(2));
             console.log(`Средний балл: ${aver}`);
+            return aver;
         }
 
         function nextCourse(average) {
-            let ever = average;
-            aver = parseFloat(aver.toFixed(2));
-            let misPoints = 7.5 - aver;
-            (+aver >= 7.5) ?
-                console.log(`${aver} Баллов достаточно для прохождения на следующий курс`) :
-                console.log(`${aver} Баллов не достаточно для прохождения на следующий курс.\nВам нехватает ${misPoints}`);
+            let misPoints = 7.5 - average;
+            (average >= 7.5) ?
+                console.log(`${average} Баллов достаточно для прохождения на следующий курс`) :
+                console.log(`${average} Баллов не достаточно для прохождения на следующий курс.\nВам нехватает ${misPoints}`);
         }
 
         function result() {
