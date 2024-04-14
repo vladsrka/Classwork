@@ -62,30 +62,31 @@
             let user = {
                 name: name,
                 lessons: lessonObject
-            }
+            };
             // console.log(user);
             return user;
         }
 
         function calcScore(lesson) {
-            let sum = 0;
+            let average = 0;
+            let rating = 0;
             for (let key in lesson) {
-                sum += lesson[key];
+                average += lesson[key];
+                rating++;
             }
-            for (let i = 1; i < key in lesson; i++) {
-                sum /= i;
-            }
-            return sum;
-
+            average /= rating;
+            return average;
         }
+
+
 
         function result() {
             let name = getName();
             let lessons = getData();
             let user = createUserObject(name, lessons);
-            let calc = calcScore(user.lessons);
+            let average = calcScore(user.lessons);
             console.log(user);
-            console.log(calc);
+            console.log(average);
         }
 
     </script>
