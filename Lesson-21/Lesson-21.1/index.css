@@ -1,0 +1,12 @@
+.link {
+    color: blue;
+    text-decoration: underline;
+}
+
+.list .active {
+    display: block;
+}
+
+.list:not(.active){
+    display: none;
+}
