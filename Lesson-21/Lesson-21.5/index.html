@@ -14,10 +14,27 @@
 
 <body>
 
+    <label>Ведите пункт списка</label>
+    <input type="text" name="item">
 
+    <p>Список дел:</p>
+    <ol></ol>
 
     <script>
         "use strict";
+
+        let input = document.querySelector('input');
+
+        input.addEventListener('keypress', addListItem);
+
+        function addListItem(event) {
+            if (event.key == 'Enter') {
+                const li = document.createElement('li');
+                li.innerHTML = input.value;
+                document.querySelector('ol').appendChild(li);
+                input.value = '';
+            }
+        }
     </script>
 
     <script src="script.js"></script>
