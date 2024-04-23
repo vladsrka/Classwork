@@ -9,13 +9,78 @@
     <link rel="stylesheet" href="./index.css" type="text/css">
     <title>Lesson-21.4</title>
     <style>
+        table {
+            border-color: blue;
+            border-collapse: collapse;
+        }
+
+        tr {
+            height: 2em;
+        }
+
+        td {
+            width: 150px;
+            text-align: center;
+        }
     </style>
 </head>
 
 <body>
 
+    <table border="1">
+        <thead>Shop list</thead>
+        <tr>
+            <th>
+                Artikel
+            </th>
+            <th>
+                Product name
+            </th>
+            <th>
+                Pries
+            </th>
+        </tr>
+    </table>
+
+
     <script>
         "use strict";
+
+        const shopList = {
+            '09360374': {
+                name: 'Cardigan',
+                price: 49.90
+            },
+            '02929990': {
+                name: 'Coat',
+                price: 99.90
+            },
+            '01827744': {
+                name: 'Dressing gown',
+                price: 55.00
+            },
+            '18288828': {
+                name: 'Dress',
+                price: 70.90
+            },
+            '08093063': {
+                name: 'Jacket',
+                price: 86.70
+            },
+            '09282888': {
+                name: 'Leggings',
+                price: 55.00
+            }
+        };
+
+        let table = document.querySelector('table');
+
+        for (let key in shopList) {
+            let tr = document.createElement('tr');
+            tr.innerHTML = `<td>${key}</td> <td>${shopList[key].name}</td> <td>${shopList[key].price}</td>`;
+            table.appendChild(tr);
+        }
+
     </script>
 
     <script src="script.js"></script>
