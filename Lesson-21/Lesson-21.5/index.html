@@ -9,13 +9,44 @@
     <link rel="stylesheet" href="./index.css" type="text/css">
     <title>Lesson-21.5</title>
     <style>
+        .input-form {
+            display: flex;
+            align-items: center;
+        }
+
+        .error-message {
+            color: red;
+            font-size: 0.7em;
+            display: none;
+
+        }
+
+        .error-message.active {
+            display: block;
+        }
+
+        .input {
+            flex-grow: 2;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        label {
+            margin-right: 10px;
+        }
     </style>
 </head>
 
 <body>
-
-    <label>Ведите пункт списка</label>
-    <input type="text" name="item">
+    <div class="input-form">
+        <label>Ведите пункт списка</label>
+        <div class="input">
+            <p class="error-message">Вы не ввели данные</p>
+            <input type="text" name="item" required>
+        </div>
+    </div>
 
     <p>Список дел:</p>
     <ol></ol>
@@ -29,10 +60,14 @@
 
         function addListItem(event) {
             if (event.key == 'Enter') {
-                const li = document.createElement('li');
-                li.innerHTML = input.value;
-                document.querySelector('ol').appendChild(li);
-                input.value = '';
+                if (input.value == '' || input.value == null) {
+                    document.querySelector('.error-message').classList.add('active');
+                } else {
+                    const li = document.createElement('li');
+                    li.innerHTML = input.value;
+                    document.querySelector('ol').appendChild(li);
+                    input.value = '';
+                }
             }
         }
     </script>
