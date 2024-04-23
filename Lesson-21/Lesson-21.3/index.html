@@ -14,10 +14,49 @@
 
 <body>
 
+    <!-- <div id="parent">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+    </div>
 
-    <!-- <script>
+    <button id="create-p">Добавить элемент</button>
+
+    <script>
         "use strict";
+        let parent = document.querySelector('#parent');
+        const Button = document.querySelector('#create-p');
+
+        Button.onclick = function clickButton() {
+            let p = document.createElement('p');
+            p.textContent = '444';
+
+            parent.appendChild(p);
+        }
     </script> -->
+
+    <div id="parent">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+    </div>
+
+    <button id="create-p">Добавить элемент</button>
+
+    <script>
+        "use strict";
+        let parent = document.querySelector('#parent');
+        const Button = document.querySelector('#create-p');
+
+        Button.onclick = function clickButton() {
+            let p = document.createElement('p');
+            let content = document.querySelector('#parent').children.length;
+            content++;
+            p.textContent = content;
+
+            parent.appendChild(p);
+        }
+    </script>
 
     <script src="script.js"></script>
 </body>
