@@ -39,6 +39,9 @@
             <th>
                 Pries
             </th>
+            <th>
+                Count
+            </th>
         </tr>
     </table>
 
@@ -49,27 +52,33 @@
         const shopList = {
             '09360374': {
                 name: 'Cardigan',
-                price: 49.90
+                price: 49.90,
+                count: 2
             },
             '02929990': {
                 name: 'Coat',
-                price: 99.90
+                price: 99.90,
+                count: 3
             },
             '01827744': {
                 name: 'Dressing gown',
-                price: 55.00
+                price: 55.00,
+                count: 5
             },
             '18288828': {
                 name: 'Dress',
-                price: 70.90
+                price: 70.90,
+                count: 0
             },
             '08093063': {
                 name: 'Jacket',
-                price: 86.70
+                price: 86.70,
+                count: 0
             },
             '09282888': {
                 name: 'Leggings',
-                price: 55.00
+                price: 55.00,
+                count: 7
             }
         };
 
@@ -77,7 +86,13 @@
 
         for (let key in shopList) {
             let tr = document.createElement('tr');
-            tr.innerHTML = `<td>${key}</td> <td>${shopList[key].name}</td> <td>${shopList[key].price}</td>`;
+            let count;
+            if (shopList[key].count == 0) {
+                count = 'out of stock';
+            } else {
+                count = shopList[key].count;
+            }
+            tr.innerHTML = `<td>${key}</td> <td>${shopList[key].name}</td> <td>${shopList[key].price}</td> <td>${count}</td>`;
             table.appendChild(tr);
         }
 
