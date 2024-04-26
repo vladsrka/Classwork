@@ -15,7 +15,7 @@ function addError() {
         }
     }
     if (error == 0) {
-        header.innerHTML = `Добро пожаловать ${inputs[0].value} ${inputs[1].value}`;
+        header.innerHTML = `Добро пожаловать ${inputs[0].value} ${inputs[1].value}`.toUpperCase();
         inputs.value = '';
     }
 }
