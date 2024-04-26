@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/icon.png" type="image/png">
+    <link rel="stylesheet" href="./normaliz.css" type="text/css">
+    <link rel="stylesheet" href="./index.css" type="text/css">
+    <title>Lesson-21.4</title>
+    <style>
+        table {
+            border-color: blue;
+            border-collapse: collapse;
+        }
+
+        tr {
+            height: 2em;
+        }
+
+        td {
+            width: 150px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table border="1">
+        <thead>Shop list</thead>
+        <tr>
+            <th>
+                Artikel
+            </th>
+            <th>
+                Product name
+            </th>
+            <th>
+                Pries
+            </th>
+            <th>
+                Count
+            </th>
+        </tr>
+    </table>
+
+
+    <script>
+        "use strict";
+
+        const shopList = {
+            '09360374': {
+                name: 'Cardigan',
+                price: 49.90,
+                count: 2
+            },
+            '02929990': {
+                name: 'Coat',
+                price: 99.90,
+                count: 3
+            },
+            '01827744': {
+                name: 'Dressing gown',
+                price: 55.00,
+                count: 5
+            },
+            '18288828': {
+                name: 'Dress',
+                price: 70.90,
+                count: 0
+            },
+            '08093063': {
+                name: 'Jacket',
+                price: 86.70,
+                count: 0
+            },
+            '09282888': {
+                name: 'Leggings',
+                price: 55.00,
+                count: 7
+            }
+        };
+
+        let table = document.querySelector('table');
+
+        for (let key in shopList) {
+            let tr = document.createElement('tr');
+            let count;
+            if (shopList[key].count == 0) {
+                count = 'out of stock';
+            } else {
+                count = shopList[key].count;
+            }
+            tr.innerHTML = `<td>${key}</td> <td>${shopList[key].name}</td> <td>${shopList[key].price}</td> <td>${count}</td>`;
+            table.appendChild(tr);
+        }
+
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
