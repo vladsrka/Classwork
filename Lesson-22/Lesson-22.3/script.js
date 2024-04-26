@@ -15,5 +15,5 @@ function checkString(str, substr) {
     return correcStr.includes(correcSubStr);
 }
 
-console.log(checkString('я учу javascript!', 'JavaScript'))
-console.log(checkString('я учу javascript!', 'javascript'))
+console.log(checkString('я учу javascript!', 'JavaScript'));
+console.log(checkString('я учу javascript!', 'javascript'));
