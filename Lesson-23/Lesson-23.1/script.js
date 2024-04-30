@@ -93,6 +93,10 @@
 // newStr = str.toLowerCase().replaceAll(oldStr, 'JavaScript');
 // console.log(newStr);
 
-let str = '1-2-3-4-5';
-let newStr = str.replaceAll('-', '.')
+// let str = '1-2-3-4-5';
+// let newStr = str.replaceAll('-', '.');
+// console.log(newStr);
+
+let str = 'Янв,Фев,Апр,Май,Июн,Июл,Авг,Сен,Окт,Ноя,Дек';
+let newStr = str.split(' ');
 console.log(newStr);
