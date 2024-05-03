@@ -102,4 +102,25 @@
 // }
 
 
-console.log('Задание 5');
+// console.log('Задание 5');
+// let arr = [1,2,3];
+// arr.push(4,5,6);
+// console.log(arr);
+
+
+// console.log('Задание 6');
+// let arr = [1,2,3];
+// arr.unshift(-2,-1,0);
+// console.log(arr);
+
+// console.log('Задание 7');
+// let arr = ['что-то', 'ещё'];
+// arr.unshift(arr.pop());
+// console.log(arr);
+
+console.log('Задание 8');
+let str = 'Янв,Фев,Апр,Май,Июн,Июл,Авг,Сен,Окт,Ноя,Дек';
+let newStr = str.split(',');
+newStr.unshift(newStr.pop());
+str = newStr.join(',')
+console.log(str);
