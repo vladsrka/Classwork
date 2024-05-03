@@ -83,20 +83,23 @@
 // console.log(str);
 
 
-console.log('Задание 4');
-let str = 'my-shot-string';
-let newStr = '';
-camelize(str);
+// console.log('Задание 4');
+// let str = 'my-shot-string';
+// let newStr = '';
+// camelize(str);
 
-function camelize(str) {
-    str = str.split('-');
-    for (let i = 0; i < str.length; i++) {
-        if (i == 0) {
-            str[i] = str[i];
-        } else {
-            str[i] = str[i].replace(`${str[i].charAt(0)}`, `${str[i].charAt(0).toUpperCase()}`);
-        }
-        newStr += str[i];
-    }
-    console.log(newStr);
-}
+// function camelize(str) {
+//     str = str.split('-');
+//     for (let i = 0; i < str.length; i++) {
+//         if (i == 0) {
+//             str[i] = str[i];
+//         } else {
+//             str[i] = str[i].replace(`${str[i].charAt(0)}`, `${str[i].charAt(0).toUpperCase()}`);
+//         }
+//         newStr += str[i];
+//     }
+//     console.log(newStr);
+// }
+
+
+console.log('Задание 5');
