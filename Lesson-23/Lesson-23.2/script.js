@@ -113,14 +113,31 @@
 // arr.unshift(-2,-1,0);
 // console.log(arr);
 
+
 // console.log('Задание 7');
 // let arr = ['что-то', 'ещё'];
 // arr.unshift(arr.pop());
 // console.log(arr);
 
-console.log('Задание 8');
-let str = 'Янв,Фев,Апр,Май,Июн,Июл,Авг,Сен,Окт,Ноя,Дек';
-let newStr = str.split(',');
-newStr.unshift(newStr.pop());
-str = newStr.join(',')
-console.log(str);
+
+// console.log('Задание 8');
+// let str = 'Янв,Фев,Апр,Май,Июн,Июл,Авг,Сен,Окт,Ноя,Дек';
+// let newStr = str.split(',');
+// newStr.unshift(newStr.pop());
+// str = newStr.join(',')
+// console.log(str);
+
+
+// console.log('Задание 9');
+// let arr = ["Бильбо","Гэндальф","Назгул"];
+// for (let ar of arr)
+// console.log(ar);
+
+
+console.log('Задание 10');
+let arr = ["груши", "яблоки", "сливы", "абрикосы", "апельсин"];
+reverse(arr);
+function reverse(arr) {
+    newStr = newStr.split(',');
+    console.log(newStr);
+}
