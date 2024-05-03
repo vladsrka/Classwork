@@ -69,13 +69,34 @@
 // }
 
 
-console.log('Задание 3');
-let str = 'Янв,Фев,Апр,Май,Июн,Июл,Авг,Сен,Окт,Ноя,Дек';
-let newStr = str.split(',');
-console.log(newStr);
-let end = newStr.length;
-let start = 0;
-newStr.sort(function (a, b) {
-    return b - a;
-});
-console.log(newStr);
+// console.log('Задание 3');
+// let str = 'Янв,Фев,Апр,Май,Июн,Июл,Авг,Сен,Окт,Ноя,Дек';
+// let newStr = str.split(',');
+// console.log(newStr);
+
+// str = ',' + str;
+// newStr = str.split(',');
+// newStr[0] = newStr[newStr.length - 1];
+// newStr[newStr.length - 1];
+// str = newStr.join();
+// str = str.slice(0, str.length - 1);
+// console.log(str);
+
+
+console.log('Задание 4');
+let str = 'my-shot-string';
+let newStr = '';
+camelize(str);
+
+function camelize(str) {
+    str = str.split('-');
+    for (let i = 0; i < str.length; i++) {
+        if (i == 0) {
+            str[i] = str[i];
+        } else {
+            str[i] = str[i].replace(`${str[i].charAt(0)}`, `${str[i].charAt(0).toUpperCase()}`);
+        }
+        newStr += str[i];
+    }
+    console.log(newStr);
+}
