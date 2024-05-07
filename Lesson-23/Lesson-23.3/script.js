@@ -100,8 +100,6 @@
 // })
 // console.log(friends1);
 
-
-
 console.log('Задание 12');
 let arr = ['kiwi', 'apple', 'kiwi', 'orange', 'kiwi', 'apple'];
 let obj = {};
@@ -114,8 +112,6 @@ arr.forEach(elem => {
     }
 });
 console.log(obj);
-
-
 
 // console.log('Задание 13');
 // let arr = ['kiwi', 'apple', 'kiwi', 'orange', 'kiwi', 'apple'];
