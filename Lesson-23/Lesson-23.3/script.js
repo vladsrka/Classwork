@@ -62,11 +62,35 @@
 // }
 // console.log(friends1);
 
-console.log('Задание 8');
-let arr = [1, 2, 3, 4, 5];
+// console.log('Задание 8');
+// let arr = [1, 2, 3, 4, 5];
+// let newArr = [];
+// arr.forEach(elem => {
+//     newArr.push(elem * 10)
+// });
+// console.log(newArr);
+// console.log(arr);
+
+// console.log('Задание 9');
+// let arr = [-3, -2, -1, 1, 2, 3, 4, 5];
+// let newArr = [];
+// arr.forEach(elem => {
+//     newArr.push(elem * 5)
+// });
+// console.log(newArr);
+
+// console.log('Задание 10');
+// let arr = [-3, -2, -1, 1, 2, 3, 4, 5];
+// let newArr = [];
+// arr.forEach(elem => {
+//     newArr.push(elem * elem)
+// });
+// console.log(newArr);
+
+console.log('Задание 11');
+let arr = [-3, -2, -1, 1, 2, 3, 4, 5];
 let newArr = [];
 arr.forEach(elem => {
-    newArr.push(elem * 10)
+    newArr.push(elem * elem)
 });
 console.log(newArr);
-console.log(arr);
