@@ -102,34 +102,29 @@
 
 
 
-// console.log('Задание 12');
+console.log('Задание 12');
+let arr = ['kiwi', 'apple', 'kiwi', 'orange', 'kiwi', 'apple'];
+let obj = {};
+let num = 0;
+arr.forEach(elem => {
+    if (obj[elem]) {
+        obj[elem]++;
+    } else {
+        obj[elem] = 1;
+    }
+});
+console.log(obj);
+
+
+
+// console.log('Задание 13');
 // let arr = ['kiwi', 'apple', 'kiwi', 'orange', 'kiwi', 'apple'];
-// let obj = {};
-// let num = 0;
+// console.log(arr.includes('kiwi'));
+// console.log(arr.indexOf('orange'));
+// let arr1 = [];
 // arr.forEach(elem => {
-//     if (elem == 'kiwi') {
-//         let num1 = num++;
-//         obj.kiwi = num1;
-//     } else if (elem == 'apple') {
-//         let num2 = num++;
-//         obj.apple = num2;
-//     } else {
-//         let num3 = num++;
-//         obj.orange = num3;
+//     if (!arr1.includes(elem)) {
+//         arr1.push(elem)
 //     }
 // })
-// console.log(obj)
-
-
-
-console.log('Задание 13');
-let arr = ['kiwi', 'apple', 'kiwi', 'orange', 'kiwi', 'apple'];
-console.log(arr.includes('kiwi'));
-console.log(arr.indexOf('orange'));
-let arr1 = [];
-arr.forEach(elem => {
-    if (!arr1.includes(elem)) {
-        arr1.push(elem)
-    }
-})
-console.log(arr1);
+// console.log(arr1);
