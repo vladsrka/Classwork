@@ -63,3 +63,10 @@
 // console.log(friends1);
 
 console.log('Задание 8');
+let arr = [1, 2, 3, 4, 5];
+let newArr = [];
+arr.forEach(elem => {
+    newArr.push(elem * 10)
+});
+console.log(newArr);
+console.log(arr);
