@@ -49,15 +49,17 @@
 // let arr1 = ['orange', 'kiwi', 'apple'];
 // console.log(arr.concat(arr1));
 
-console.log('Задание 7');
-let friends = [
-    { name: 'alex', pizzas: ['cheese', 'pepperoni'] },
-    { name: 'mike', pizzas: ['salami', 'margarita'] },
-    { name: 'stas', pizzas: ['meat'] },
-    { name: 'anna', pizzas: ['fish'] }
-];
-let friends1 = [];
-for (let friend of friends) {
-    friends1 = friends1.concat(friend.pizzas)
-}
-console.log(friends1);
+// console.log('Задание 7');
+// let friends = [
+//     { name: 'alex', pizzas: ['cheese', 'pepperoni'] },
+//     { name: 'mike', pizzas: ['salami', 'margarita'] },
+//     { name: 'stas', pizzas: ['meat'] },
+//     { name: 'anna', pizzas: ['fish'] }
+// ];
+// let friends1 = [];
+// for (let friend of friends) {
+//     friends1 = friends1.concat(friend.pizzas)
+// }
+// console.log(friends1);
+
+console.log('Задание 8');
