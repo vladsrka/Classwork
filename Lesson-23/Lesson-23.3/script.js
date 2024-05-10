@@ -127,3 +127,11 @@
 
 
 console.log('Задание 14');
+let items = ['Coat', 'Jacket', 'Dress', 'Cardigan'];
+let numberedItems = items.map((item, index) => `${index}-${item}`);
+console.log(numberedItems);
+
+let itemObjects = items.map((item, index) => {
+    return { id: index, name: item };
+});
+console.log(itemObjects);
