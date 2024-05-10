@@ -210,4 +210,78 @@
 
 
 console.log('Задание 17');
+const shopList = {
+    '09360374': {
+        name: 'Cardigan',
+        price: 49.90
+    },
+    '02929990': {
+        name: 'Coat',
+        price: 99.90
+    },
+    '01827744': {
+        name: 'Dressing gown',
+        price: 55.00
+    },
+    '18288828': {
+        name: 'Dress',
+        price: 70.90
+    },
+    '08093063': {
+        name: 'Jacket',
+        price: 86.70
+    },
+    '09282888': {
+        name: 'Leggings',
+        price: 5.00
+    }
+};
 
+function sortItemsByName(shopList) {
+    const sortedKeys = Object.keys(shopList).sort((a, b) => {
+        const itemA = shopList[a].name.toUpperCase();
+        const itemB = shopList[b].name.toUpperCase();
+        if (itemA < itemB) {
+            return -1;
+        } else if (itemA > itemB) {
+            return 1;
+        } else {
+            return 0;
+        }
+    });
+
+    return sortedKeys.map(key => shopList[key].name);
+}
+const sortedItems1 = sortItemsByName(shopList);
+console.log(sortedItems1);
+
+
+function sortItemsByName(shopList) {
+    const sortedItems = Object.values(shopList).sort((a, b) => {
+        return a.name > b.name ? 1 : -1;
+    }).map(item => item.name);
+    return sortedItems;
+}
+const sortedNames = sortItemsByName(shopList);
+console.log(sortedNames);
+
+
+function sortPricesByPrice(shopList) {
+    const sortedPrices = Object.values(shopList).map(item => item.price).sort((a, b) => a - b);
+    return sortedPrices;
+}
+const sortedPrices2 = sortPricesByPrice(shopList);
+console.log(sortedPrices2);
+
+
+function sortItemsByPrice(shopList) {
+    const sortedItems = Object.values(shopList).sort((a, b) => a.price - b.price).map(item => {
+        return { name: item.name, price: item.price };
+    });
+    return sortedItems;
+}
+const sortedItems3 = sortItemsByPrice(shopList);
+console.log(sortedItems3);
+
+
+console.log('Задание 18');
