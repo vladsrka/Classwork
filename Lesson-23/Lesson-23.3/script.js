@@ -142,67 +142,72 @@
 // let arr = items.filter(el => el.length == 4);
 // console.log(arr);
 
-console.log('Задание 16');
-const items = [
-    {
-        "id": "1",
-        "name": "Leggings",
-        "price": 5
-    },
-    {
-        "id": "2",
-        "name": "Cardigan",
-        "price": 49.9
-    },
-    {
-        "id": "4",
-        "name": "Dressing gown",
-        "price": 55
-    },
-    {
-        "id": "11",
-        "name": "Dress",
-        "price": 70.9
-    },
-    {
-        "id": "33",
-        "name": "Jacket",
-        "price": 86.7
-    },
-    {
-        "id": "8",
-        "name": "Coat",
-        "price": 99.9
-    }
-];
+// console.log('Задание 16');
+// const items = [
+//     {
+//         "id": "1",
+//         "name": "Leggings",
+//         "price": 5
+//     },
+//     {
+//         "id": "2",
+//         "name": "Cardigan",
+//         "price": 49.9
+//     },
+//     {
+//         "id": "4",
+//         "name": "Dressing gown",
+//         "price": 55
+//     },
+//     {
+//         "id": "11",
+//         "name": "Dress",
+//         "price": 70.9
+//     },
+//     {
+//         "id": "33",
+//         "name": "Jacket",
+//         "price": 86.7
+//     },
+//     {
+//         "id": "8",
+//         "name": "Coat",
+//         "price": 99.9
+//     }
+// ];
 
-function findItemById(id) {
-    const item = items.find(item => item.id === id);
-    if (item) {
-        return item;
-    } else {
-        return 'Нет элемента с таким id';
-    }
-}
-console.log(findItemById('11'));
-console.log(findItemById('7'));
+// function findItemById(id) {
+//     const item = items.find(item => item.id === id);
+//     if (item) {
+//         return item;
+//     } else {
+//         return 'Нет элемента с таким id';
+//     }
+// }
+// console.log(findItemById('11'));
+// console.log(findItemById('7'));
 
-function findItemByName(name) {
-    const item = items.find(item => item.name === name);
-    if (item) {
-        return item;
-    } else {
-        return 'Нет элемента с таким name';
-    }
-}
-console.log(findItemByName('Dress'));
-console.log(findItemByName('Coat'));
-console.log(findItemByName('Jaba'));
+// function findItemByName(name) {
+//     const item = items.find(item => item.name === name);
+//     if (item) {
+//         return item;
+//     } else {
+//         return 'Нет элемента с таким name';
+//     }
+// }
+// console.log(findItemByName('Dress'));
+// console.log(findItemByName('Coat'));
+// console.log(findItemByName('Jaba'));
 
-const redPrice = 63;
-const itemsBelowRedPrice = findItemsBelowPrice(items, redPrice);
-function findItemsBelowPrice(items, redPrice) {
-    return items.filter(item => item.price < redPrice);
-}
+// const redPrice = 63;
+// const itemsBelowRedPrice = findItemsBelowPrice(items, redPrice);
+// function findItemsBelowPrice(items, redPrice) {
+//     return items.filter(item => item.price < redPrice);
+// }
 
-console.log(itemsBelowRedPrice);
+// console.log(itemsBelowRedPrice);
+
+
+
+console.log('Задание 17');
+
