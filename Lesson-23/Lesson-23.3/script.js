@@ -100,18 +100,18 @@
 // })
 // console.log(friends1);
 
-console.log('Задание 12');
-let arr = ['kiwi', 'apple', 'kiwi', 'orange', 'kiwi', 'apple'];
-let obj = {};
-let num = 0;
-arr.forEach(elem => {
-    if (obj[elem]) {
-        obj[elem]++;
-    } else {
-        obj[elem] = 1;
-    }
-});
-console.log(obj);
+// console.log('Задание 12');
+// let arr = ['kiwi', 'apple', 'kiwi', 'orange', 'kiwi', 'apple'];
+// let obj = {};
+// let num = 0;
+// arr.forEach(elem => {
+//     if (obj[elem]) {
+//         obj[elem]++;
+//     } else {
+//         obj[elem] = 1;
+//     }
+// });
+// console.log(obj);
 
 // console.log('Задание 13');
 // let arr = ['kiwi', 'apple', 'kiwi', 'orange', 'kiwi', 'apple'];
@@ -124,3 +124,6 @@ console.log(obj);
 //     }
 // })
 // console.log(arr1);
+
+
+console.log('Задание 14');
